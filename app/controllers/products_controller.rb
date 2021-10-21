@@ -9,7 +9,6 @@ class ProductsController < ApplicationController
     p = Product.create(
       name: "#{params["name"]}",
       price: params["price"],
-      image_url: params["image_url"],
       description: params["description"]
     )
     if p.save
@@ -24,7 +23,6 @@ class ProductsController < ApplicationController
     patch = Product.find_by(id: params["id"])
     patch.name = "#{params["name"]}"
     patch.price = params["price"]
-    patch.image_url = "#{params["image_url"]}"
     patch.description = "#{params["description"]}"
     patch.save
     render json: patch
