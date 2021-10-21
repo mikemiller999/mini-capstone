@@ -1,0 +1,73 @@
+GET http://localhost:3000/product/1.json
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+GET http://localhost:3000/product/2.json
+Content-Type: application/json
+
+{
+  
+}
+
+###
+
+GET http://localhost:3000/product/3.json
+Content-Type: application/json
+
+{
+  
+}
+
+###
+
+GET http://localhost:3000/products.json
+Content-Type: application/json
+
+{
+  
+}
+
+###
+
+POST http://localhost:3000/create.json
+Content-Type: application/json
+
+{
+  "name": "Console", 
+  "price": 500.0,
+  "image_url": "",
+  "description": "A ready to play machine that hooks up to a screen."
+}
+
+###
+POST http://localhost:3000/create.json
+Content-Type: application/json
+
+{
+  "name": "Screen", 
+  "price": 100.0,
+  "image_url": "",
+  "description": "A visual display that can be hooked up to a machine with the proper outputs."
+}
+
+###
+
+PATCH http://localhost:3000/patch.json
+Content-Type: application/json
+
+{
+  "id": 5,
+  "name": "Console", 
+  "price": 450.0,
+  "image_url": "",
+  "description": "A ready to play machine that hooks up to a screen."
+}
+
+###
+
+DELETE http://localhost:3000/delete/4.json
