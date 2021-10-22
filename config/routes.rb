@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   post "new_supplier" => "suppliers#create"
   delete "delete_supplier/:id" => "suppliers#delete"
   patch "update_supplier" => "suppliers#update"
+  post "/users" => "users#create"
+
 end

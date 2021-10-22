@@ -71,3 +71,17 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/delete/4.json
+
+###
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "LilUziGirth",
+  "email": "liluzigirth1@gmail.com",
+  "password": "wilson2021",
+  "password_confirmation": "wilson2021"
+}
+
