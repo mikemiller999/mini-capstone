@@ -95,3 +95,31 @@ Content-Type: application/json
   "password": "password"
 }
 
+###
+POST http://localhost:3000/order/new.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjcwNjh9.YVm3FBjQPh7mLUr9UXSSJrJfNdePr2VZRcE_Rm-0xws
+Content-Type: application/json
+
+{
+  "product_id": 1,
+  "quantity": 1,
+  "subtotal": 50.0,
+  "tax": 5.0,
+  "total": 55.0
+}
+
+###
+
+GET http://localhost:3000/index/.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjcwNjh9.YVm3FBjQPh7mLUr9UXSSJrJfNdePr2VZRcE_Rm-0xws
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/index/1.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjcwNjh9.YVm3FBjQPh7mLUr9UXSSJrJfNdePr2VZRcE_Rm-0xws
+Content-Type: application/json
+
+###
+
+

@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   patch "update_supplier" => "suppliers#update"
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
+  post "/order/new" => "orders#create"
+  get "/index/:id" => "orders#read"
 end
