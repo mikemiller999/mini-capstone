@@ -110,14 +110,14 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/index/.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjcwNjh9.YVm3FBjQPh7mLUr9UXSSJrJfNdePr2VZRcE_Rm-0xws
+GET http://localhost:3000/index/all.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNzM4ODZ9.NqfR5cEuDnzPe27mMgc2TX70F-LgKfEO8F4t1Ykfyg4
 Content-Type: application/json
 
 ###
 
 GET http://localhost:3000/index/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNjcwNjh9.YVm3FBjQPh7mLUr9UXSSJrJfNdePr2VZRcE_Rm-0xws
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUyNzM4ODZ9.NqfR5cEuDnzPe27mMgc2TX70F-LgKfEO8F4t1Ykfyg4
 Content-Type: application/json
 
 ###

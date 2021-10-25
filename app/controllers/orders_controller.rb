@@ -19,8 +19,8 @@ class OrdersController < ApplicationController
 
   def read
     if current_user
-      if params[:id] == nil
-        render json: User.orders
+      if params[:id] == "all"
+        render json: current_user.orders
       else
         if Order.find_by(id: params[:id]).user_id == current_user.id
           render json: Order.find_by(id: params[:id])
