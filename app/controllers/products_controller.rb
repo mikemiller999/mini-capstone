@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-
+  before_action :authenticate_admin, except: [:product_method, :products_method]
   def products_method
     render json: Product.all
   end

@@ -1,4 +1,5 @@
 class SuppliersController < ApplicationController
+  before_action :authenticate_admin, except: [:product_method, :products_method]
   def create
     if current_user
       s = Supplier.create(name: params["name"].to_s, email: params["email"].to_s, phone_number: params["phone_number"])

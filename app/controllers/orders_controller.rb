@@ -13,7 +13,7 @@ class OrdersController < ApplicationController
         render json: {message: "validation failure: check inputs"}
       end
     else
-      render json: {message: "not logged in"}
+      render json: {message: "not logged in"}, status: 401
     end   
   end
 
@@ -29,9 +29,8 @@ class OrdersController < ApplicationController
         end
       end
     else
-      render json: {message: "not logged in"}
+      render json: {message: "not logged in"}, status: 401
     end  
   end
-
 
 end
