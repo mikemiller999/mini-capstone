@@ -1,5 +1,6 @@
 GET http://localhost:3000/product/1.json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTQyMDZ9._yoIQUTaUyogkbS5SwcFy8VP8lDgDNLcoDqboTklPqc
 
 {
 
@@ -83,5 +84,14 @@ Content-Type: application/json
   "email": "liluzigirth1@gmail.com",
   "password": "wilson2021",
   "password_confirmation": "wilson2021"
+}
+
+###
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
 }
 
