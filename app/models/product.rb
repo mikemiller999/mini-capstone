@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
   belongs_to :supplier
+  has_many :CategoryProduct
   has_many :product
   has_many :images
   validates :name, presence: true, uniqueness: true
